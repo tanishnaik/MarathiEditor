@@ -1,0 +1,38 @@
+.editor-pane {
+  display: flex;
+  flex-direction: row;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0005;
+  min-height: 320px;
+  max-height: 60vh;
+  overflow: hidden;
+}
+.editor-pane.light {
+  background: #fff;
+}
+.line-numbers {
+  background: #232323;
+  color: #888;
+  padding: 1rem 0.5rem 1rem 1rem;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 1.1rem;
+  text-align: right;
+  user-select: none;
+}
+.editor-textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem;
+  resize: vertical;
+  min-height: 320px;
+  tab-size: 4;
+}
+.editor-textarea::placeholder {
+  color: #666;
+}

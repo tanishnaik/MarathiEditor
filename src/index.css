@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Segoe UI', 'Fira Mono', 'monospace', 'sans-serif';
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232323;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+h1, h2 {
+  font-family: 'Segoe UI', 'monospace';
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
+
+/* Selection highlight */
+::selection {
+  background: #007acc;
+  color: #fff;
+}
+
+/* Button focus */
+button:focus {
+  outline: 2px solid #007acc;
+}
+
+/* Editor focus */
+.vscode-editor:focus {
+  outline: 2px solid #007acc;
+}
+
+/* Output box scroll */
+.output-viewer {
+  overflow-y: auto;
+  max-height: 200px;
+}
